@@ -1,3 +1,22 @@
+const { json } = require('express');
 const express = require('express');
-const router= require(express).Router()
-const app = express()
+const router= express.Router();
+ 
+
+
+
+
+
+router.post('/generateimage', (req, res) =>{
+    res.status(200).json({
+        success:true,  
+    })
+})
+
+
+
+
+
+
+
+module.exports= router

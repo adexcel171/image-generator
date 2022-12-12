@@ -6,6 +6,11 @@ const port = process.env.PORT|| 5000;
 
 
 
+app.use('/openai', require('./routes/openai'));
+
+
+
+
 app.listen( port, () => {
     console.log(`server is working on ${port }`)
 })
